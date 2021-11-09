@@ -1,7 +1,7 @@
 terraform {
   backend "azurerm" {
       resource_group_name   = "tfstate"
-      storage_account_name  = "tfstate11420"
+      storage_account_name  = "tfstate12345"
       container_name        = "tfstate"
       key                   = "example.tfstate"
   }
@@ -19,5 +19,5 @@ terraform {
 
 provider "kubernetes" {
     config_path = "~/.kube/config"
-    config_context = "mattrs-aks-cluster"
+    config_context = "my-kube-cluster"
 }
