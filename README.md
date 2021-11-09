@@ -16,6 +16,10 @@ Follow these steps to set up your environment
 - Copy the clone command (either the SSH format or the HTTPS). If you are using the SSH protocol, ensure your public key is in Bitbucket and loaded on the local system to which you are cloning.
 - From a terminal window, change to the local directory where you want to clone your repository.
 
+### Build the agent Docker image
+- Fill in the ACR name and ACR address within the ./azdevagent/build.sh script
+- Run the build.sh script
+
 ### Get an Azure DevOps Token (PAT)
 - Create your Azure DevOps organisation (if not already created)
 - Go to the User Settings (top right hand corner)
