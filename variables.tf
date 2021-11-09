@@ -11,19 +11,28 @@ variable "azure_devops_org_name" {
 variable "azure_devops_container_agent_name" {
     description = "The displayed container name for the Azure Dev Ops agent"
     type        = string
+    default     = "azure-devops-agent"
 }
 
 variable "agent_pool_name" {
     description = "Name of the agent pool that you want to create"
     type        = string
+    default     = "aks-agents"
 }
 
 variable "acr_url" {
-    description = "URL for the ACR being used to store the Azure DevOps agent image i.e. example.azurecr.io"
-    type        = string  
+    description = "URL for the ACR being used to store the Azure DevOps agent image i.e. myexampleacr.azurecr.io"
+    type        = string
 }
 
 variable "kube_dep_label_name" {
     description = "Label name to be used for the kube metadata"
-    type        = string  
+    type        = string
+    default     = "azure-devops-agents"
+}
+
+variable "agent_replicas" {
+    description = "The number of agent replicas required"
+    type = number
+    default = 1
 }

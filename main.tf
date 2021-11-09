@@ -33,7 +33,7 @@ resource "kubernetes_deployment" "example" {
   }
 
   spec {
-    replicas = 1
+    replicas = var.agent_replicas
 
     selector {
       match_labels = {
