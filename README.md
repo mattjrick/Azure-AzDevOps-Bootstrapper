@@ -50,3 +50,4 @@ _If you do not already have a provider backend_
         agent_pool_name = 
         acr_url = 
         kube_dep_label_name = 
+        azure_devops_project_name = 
