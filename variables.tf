@@ -14,6 +14,11 @@ variable "azure_devops_container_agent_name" {
     default     = "azure-devops-agent"
 }
 
+variable "azure_devops_project_name" {
+    description = "Name of the Azure DevOps project to be created"
+    type        = string
+}
+
 variable "agent_pool_name" {
     description = "Name of the agent pool that you want to create"
     type        = string

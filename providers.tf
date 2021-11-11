@@ -6,6 +6,10 @@ terraform {
       key                   = "example.tfstate"
   }
   required_providers {
+    azuread = {
+      source = "hashicorp/azuread"
+      version = "2.8.0"
+    }
     azuredevops = {
       source = "microsoft/azuredevops"
       version = "0.1.7"
@@ -20,4 +24,11 @@ terraform {
 provider "kubernetes" {
     config_path = "~/.kube/config"
     config_context = "my-kube-cluster"
+}
+
+provider "azurerm" {
+  features {}
+}
+
+provider "azuread" {
 }
