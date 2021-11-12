@@ -11,7 +11,7 @@ resource "azuredevops_project" "project" {
 
 resource "azuredevops_serviceendpoint_azurerm" "endpointazure" {
   project_id                = azuredevops_project.project.id
-  service_endpoint_name     = "Sample AzureRM"
+  service_endpoint_name     = "Azure Service Connection"
   description               = "Managed by Terraform" 
   azurerm_spn_tenantid      = data.azurerm_subscription.current.tenant_id
   azurerm_subscription_id   = data.azurerm_subscription.current.subscription_id

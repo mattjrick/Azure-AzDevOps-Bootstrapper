@@ -1,5 +1,8 @@
 # Azure-AzDevOps-Bootstrapper
-This repository contains Terraform code for bootstrapping configuration for an existing Azure DevOps account with self-hosted Kubernetes build agents. 
+This repository contains Terraform code which:
+- Creates (self-hosted) Kubernetes build agents. 
+- Creates a new project within your Azure DevOps organisation
+- Creates a service connection to your in-scope Azure subscription (az account show) with Contributor privileges
 
 ## Prerequisites 
 The following is required in order for this Terraform to work:
